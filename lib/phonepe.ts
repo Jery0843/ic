@@ -9,10 +9,10 @@ const PHONEPE_CONFIG = {
   apiUrl: process.env.PHONEPE_API_URL || 'https://api-preprod.phonepe.com/apis/pg-sandbox',
   // Use VERCEL_URL on Vercel, otherwise use NEXT_PUBLIC_APP_URL or localhost
   redirectUrl: process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}/payment/redirect`
+    ? `https://${process.env.NEXT_PUBLIC_APP_URL}/payment/redirect`
     : (process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/payment/redirect` : 'http://localhost:3000/payment/redirect'),
   callbackUrl: process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}/api/payment/callback`
+    ? `https://${process.env.NEXT_PUBLIC_APP_URL}/api/payment/callback`
     : (process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/api/payment/callback` : 'http://localhost:3000/api/payment/callback'),
 };
 
