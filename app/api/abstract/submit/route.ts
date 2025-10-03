@@ -71,7 +71,8 @@ export async function POST(request: NextRequest) {
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
     
-    const tmpDir = join(process.cwd(), 'tmp');
+    // Use OS temp directory which is writable in serverless environments like Vercel
+    const tmpDir = process.env.VERCEL ? '/tmp' : join(process.cwd(), 'tmp');
     const fileName = `abstract_${email}_${Date.now()}_${file.name}`;
     tempFilePath = join(tmpDir, fileName);
     
