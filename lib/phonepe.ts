@@ -7,8 +7,13 @@ const PHONEPE_CONFIG = {
   saltKey: process.env.PHONEPE_SALT_KEY || '96434309-7796-489d-8924-ab56988a6076',
   saltIndex: '1',
   apiUrl: process.env.PHONEPE_API_URL || 'https://api-preprod.phonepe.com/apis/pg-sandbox',
-  redirectUrl: process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/payment/redirect` : 'http://localhost:3000/payment/redirect',
-  callbackUrl: process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/api/payment/callback` : 'http://localhost:3000/api/payment/callback',
+  // Use VERCEL_URL on Vercel, otherwise use NEXT_PUBLIC_APP_URL or localhost
+  redirectUrl: process.env.VERCEL_URL 
+    ? `https://${process.env.VERCEL_URL}/payment/redirect`
+    : (process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/payment/redirect` : 'http://localhost:3000/payment/redirect'),
+  callbackUrl: process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}/api/payment/callback`
+    : (process.env.NEXT_PUBLIC_APP_URL ? `${process.env.NEXT_PUBLIC_APP_URL}/api/payment/callback` : 'http://localhost:3000/api/payment/callback'),
 };
 
 // Generate X-VERIFY header for PhonePe API
