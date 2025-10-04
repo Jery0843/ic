@@ -156,7 +156,7 @@ const PersonCard = ({ person, index, type }: any) => {
             />
           </div>
           
-          <p className="text-sm text-gray-600 leading-relaxed mt-3 flex-1">{person.title}</p>
+          <p className="text-sm text-gray-600 leading-relaxed mt-3 flex-1 whitespace-pre-line">{person.title}</p>
         </div>
 
         {/* Bottom accent line */}
@@ -174,35 +174,35 @@ const PersonCard = ({ person, index, type }: any) => {
 export default function CommitteePage() {
   const committee = {
     chiefPatrons: [
-      { name: 'Shri R. Srinivasan', title: 'Chairman, KSR Educational Institutions', image: '/images/committee/Srinivasan.jpg' },
-      { name: 'Shri K. S. Sachin', title: 'Vice Chairman, KSR Educational Institutions', image: '/images/committee/sachin.jpg' },
-      { name: 'Dr. Tunku Ismail Ibni Sultan Ibrahim', title: 'Chancellor, UTHM', image: '/images/committee/tunku.jpeg' },
-      { name: 'Sri A. Varada Reddy', title: 'Chancellor, SR University', image: '/images/committee/varada.jpeg' },
+      { name: 'Shri R. Srinivasan', title: 'Chairman,\nKSR Educational Institutions', image: '/images/committee/Srinivasan.jpg' },
+      { name: 'Shri K. S. Sachin', title: 'Vice Chairman,\nKSR Educational Institutions', image: '/images/committee/sachin.jpg' },
+      { name: 'Dr. Tunku Ismail Ibni Sultan Ibrahim', title: 'Chancellor,\nUTHM', image: '/images/committee/tunku.jpeg' },
+      { name: 'Sri A. Varada Reddy', title: 'Chancellor,\nSR University', image: '/images/committee/varada.jpeg' },
     ],
     patrons: [
-      { name: 'Dr. M. Venkatesan', title: 'Dean, K.S.R. College of Engineering', image: '/images/committee/venkat.jpg' },
-      { name: 'Dr. P. MeenakshiDevi', title: 'Principal, K.S.R. College of Engineering', image: '/images/committee/meena.png' },
-      { name: 'Professor Dr. Mas Fawzi bin Mohd Ali', title: 'Vice-Chancellor, UTHM', image: '/images/committee/fawzi.png' },
-      { name: 'Prof. Dr. Shahruddin bin Mahzan @ Mohd Zin', title: 'Deputy Vice-Chancellor, UTHM', image: '/images/committee/sharudhin.jpg' },
-      { name: 'Prof. Deepak Garg', title: 'Vice-Chancellor, SR University', image: '/images/committee/deepak.jpg' },
+      { name: 'Dr. M. Venkatesan', title: 'Dean,\nK.S.R. College of Engineering', image: '/images/committee/venkat.jpg' },
+      { name: 'Dr. P. MeenakshiDevi', title: 'Principal,\nK.S.R. College of Engineering', image: '/images/committee/meena.png' },
+      { name: 'Professor Dr. Mas Fawzi bin Mohd Ali', title: 'Vice-Chancellor,\nUTHM', image: '/images/committee/fawzi.png' },
+      { name: 'Professor Dr. Shahruddin bin Mahzan @ Mohd Zin', title: 'Deputy Vice-Chancellor,\nUTHM', image: '/images/committee/sharudhin.jpg' },
+      { name: 'Prof. Deepak Garg', title: 'Vice-Chancellor,\nSR University', image: '/images/committee/deepak.jpg' },
     ],
     coPatrons: [
-      { name: 'Dr. Veena', title: 'Director – IQAC, K.S.R. College of Engineering', image: '/images/committee/veena.png' },
-      { name: 'Dr. R. Archana Reddy', title: 'Registrar, SR University', image: '/images/committee/archana.jpg' },
+      { name: 'Dr. Veena', title: 'Director – IQAC,\nK.S.R. College of Engineering', image: '/images/committee/veena.png' },
+      { name: 'Dr. R. Archana Reddy', title: 'Registrar,\nSR University', image: '/images/committee/archana.jpg' },
     ],
     conferenceChair: [
-      { name: 'Dr. G. Singaravel', title: 'Head – International Relations, K.S.R. College of Engineering', image: '/images/committee/singaravel.png' },
+      { name: 'Dr. G. Singaravel', title: 'Head – International Relations,\nK.S.R. College of Engineering', image: '/images/committee/singaravel.png' },
     ],
     conferenceCoChair: [
-      { name: 'Dr. Sheshikala Martha', title: 'Professor & Head, CSE, SR University', image: '/images/committee/shehikla.jpeg' },
-      { name: 'Dr. Balajee Maram', title: 'Professor and Dean (Ph.D Program), SR University', image: '/images/committee/balajee.jpeg' },
+      { name: 'Dr. Sheshikala Martha', title: 'Professor & Head, CSE,\nSR University', image: '/images/committee/shehikla.jpeg' },
+      { name: 'Dr. Balajee Maram', title: 'Professor and Dean (Ph.D Program),\nSR University', image: '/images/committee/balajee.jpeg' },
     ],
     convenors: [
-      { name: 'Dr. S. Anguraj', title: 'Associate Professor & Head, IT, K.S.R. College of Engineering', image: '/images/committee/anguraj.png' },
-      { name: 'Dr. V. Sharmila', title: 'Associate Professor & Head, CSE, K.S.R. College of Engineering', image: '/images/committee/sharmila.png' },
-      { name: 'Mrs. K. Sudha', title: 'Assistant Professor & Head, Cyber Security, K.S.R. College of Engineering', image: '/images/committee/sudha.jpg' },
-      { name: 'Dr. N. Saravanan', title: 'Professor & Head, CSE (IoT), K.S.R. College of Engineering', image: '/images/committee/saravanan.jpg' },
-      { name: 'Dr. S. Malatthi', title: 'Associate Professor & Head, CSD, K.S.R. College of Engineering', image: '/images/committee/malathi.jpg' },
+      { name: 'Dr. S. Anguraj', title: 'Associate Professor & Head, IT,\nK.S.R. College of Engineering', image: '/images/committee/anguraj.png' },
+      { name: 'Dr. V. Sharmila', title: 'Associate Professor & Head, CSE,\nK.S.R. College of Engineering', image: '/images/committee/sharmila.png' },
+      { name: 'Mrs. K. Sudha', title: 'Assistant Professor & Head, Cyber Security,\nK.S.R. College of Engineering', image: '/images/committee/sudha.jpg' },
+      { name: 'Dr. N. Saravanan', title: 'Professor & Head, CSE (IoT),\nK.S.R. College of Engineering', image: '/images/committee/saravanan.jpg' },
+      { name: 'Dr. S. Malatthi', title: 'Associate Professor & Head, CSD,\nK.S.R. College of Engineering', image: '/images/committee/malathi.jpg' },
     ],
   };
 
