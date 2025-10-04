@@ -11,12 +11,12 @@ export default function ContactPage() {
   const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error', message: string } | null>(null);
 
   const committee = [
-    { role: 'Conference Chair', name: 'Dr.G. Singaravel', title: 'Head – International Relations, K.S.R. College of Engineering', image: '/images/committee/singaravel.png' },
-    { role: 'Co-Chair', name: 'Dr. Sheshikala Martha', title: 'Professor & Head, CSE, SR University', image: '/images/committee/shehikla.jpeg' },
-    { role: 'Co-Chair', name: 'Dr. Balajee Maram', title: 'Professor and Dean (Ph.D Program), SR University', image: '/images/committee/balajee.jpeg' },
-    { role: 'Convenor', name: 'Dr.S. Anguraj', title: 'Associate Professor & Head, IT, KSRCE', image: '/images/committee/anguraj.png' },
-    { role: 'Convenor', name: 'Dr.V. Sharmila', title: 'Associate Professor & Head, CSE, KSRCE', image: '/images/committee/sharmila.png' },
-    { role: 'Convenor', name: 'Mrs.K. Sudha', title: 'Assistant Professor & Head, Cyber Security, KSRCE', image: '/images/committee/sudha.jpg' },
+    { role: 'Conference Chair', name: 'Dr.G. Singaravel', title: 'Head – International Relations,\nK.S.R. College of Engineering', image: '/images/committee/singaravel.png' },
+    { role: 'Co-Chair', name: 'Dr. Sheshikala Martha', title: 'Professor & Head, CSE,\nSR University', image: '/images/committee/shehikla.jpeg' },
+    { role: 'Co-Chair', name: 'Dr. Balajee Maram', title: 'Professor and Dean (Ph.D Program),\nSR University', image: '/images/committee/balajee.jpeg' },
+    { role: 'Convenor', name: 'Dr.S. Anguraj', title: 'Associate Professor & Head, IT,\nKSRCE', image: '/images/committee/anguraj.png' },
+    { role: 'Convenor', name: 'Dr.V. Sharmila', title: 'Associate Professor & Head, CSE,\nKSRCE', image: '/images/committee/sharmila.png' },
+    { role: 'Convenor', name: 'Mrs.K. Sudha', title: 'Assistant Professor & Head, Cyber Security,\nKSRCE', image: '/images/committee/sudha.jpg' },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -185,7 +185,7 @@ export default function ContactPage() {
                   </div>
                   <div className="text-sm font-semibold text-primary-600 mb-2">{member.role}</div>
                   <h3 className="font-bold text-gray-800 mb-2">{member.name}</h3>
-                  <p className="text-sm text-gray-600">{member.title}</p>
+                  <p className="text-sm text-gray-600 whitespace-pre-line">{member.title}</p>
                 </motion.div>
               ))}
             </div>
