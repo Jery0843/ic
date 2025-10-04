@@ -66,7 +66,7 @@ export default function Home() {
             playsInline
             className="absolute top-0 left-0 w-full h-full object-cover"
           >
-            <source src="https://res.cloudinary.com/dllbh1v1m/video/upload/v1754979177/vdo1_g6wq8h.mp4" type="video/mp4" />
+            <source src="/videos/hero-bg.mp4" type="video/mp4" />
           </video>
           {/* Dark overlay for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary-900/70 via-purple-900/70 to-accent-900/70"></div>
