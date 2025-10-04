@@ -286,7 +286,7 @@ export default function CommitteePage() {
             >
               Patrons
             </motion.h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 items-stretch">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch">
               {committee.patrons.map((person, index) => (
                 <PersonCard key={index} person={person} index={index} type="patron" />
               ))}
@@ -369,7 +369,7 @@ export default function CommitteePage() {
             >
               Convenors
             </motion.h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 items-stretch">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch">
               {committee.convenors.map((person, index) => (
                 <PersonCard key={index} person={person} index={index} type="convenor" />
               ))}
