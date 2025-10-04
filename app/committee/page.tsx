@@ -183,8 +183,8 @@ export default function CommitteePage() {
       { name: 'Dr. M. Venkatesan', title: 'Dean,\nK.S.R. College of Engineering', image: '/images/committee/venkat.jpg' },
       { name: 'Dr. P. MeenakshiDevi', title: 'Principal,\nK.S.R. College of Engineering', image: '/images/committee/meena.png' },
       { name: 'Dr. Mas Fawzi bin Mohd Ali', title: 'Vice-Chancellor,\nUTHM', image: '/images/committee/fawzi.png' },
-      { name: 'Dr. Shahruddin bin Mahzan @ Mohd Zin', title: 'Deputy Vice-Chancellor,\nUTHM', image: '/images/committee/sharudhin.jpg' },
-      { name: 'Prof. Deepak Garg', title: 'Vice-Chancellor,\nSR University', image: '/images/committee/deepak.jpg' },
+      { name: 'Dr. Shahruddin bin Mahzan', title: 'Deputy Vice-Chancellor,\nUTHM', image: '/images/committee/sharudhin.jpg' },
+      { name: 'Dr. Deepak Garg', title: 'Vice-Chancellor,\nSR University', image: '/images/committee/deepak.jpg' },
     ],
     coPatrons: [
       { name: 'Dr. Veena', title: 'Director – IQAC,\nK.S.R. College of Engineering', image: '/images/committee/veena.png' },
